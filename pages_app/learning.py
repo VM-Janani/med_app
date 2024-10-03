@@ -67,7 +67,7 @@ def main():
     st.latex(r"D[i,j] = \min(D[i-1,j] + 1, D[i,j-1] + 1, D[i-1,j-1] + \text{sub-cost})")
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("https://raw.githubusercontent.com/VM-Janani/med_app/main/pages/images/med_matrix.jpg", caption="MED Matrix: Transforming 'sitting' to 'kitten'", width=300)
+        st.image("https://raw.githubusercontent.com/VM-Janani/med_app/refs/heads/main/pages_app/images/med_matrix.jpg", caption="MED Matrix: Transforming 'sitting' to 'kitten'", width=300)
 
 
     st.header("🧠 Levenshtein Distance & Substitution Costs")
