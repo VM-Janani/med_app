@@ -4,7 +4,6 @@ from pages_app.learning import main as learning_main
 from pages_app.cal import main as calculation_main
 from pages_app.autocorrection import main as auto_main
 from pages_app.dna import main as dna_main
-#from pages_app.dna import dna_sequencing_visualization as dna_main
 
 # Create a sidebar for navigation
 st.sidebar.title("Navigation")
