@@ -42,8 +42,8 @@ def visualize_med_matrix(seq1, seq2, matrix):
 # Load dataset function
 def load_dna_dataset():
     # Load DNA sequences from the Kaggle dataset
-    url = "https://github.com/VM-Janani/med_app/blob/main/pages_app/images/NonPromoterSequence.csv"  # Update with the correct path to your dataset
-    return pd.read_csv(url)
+    url = "https://raw.githubusercontent.com/VM-Janani/med_app/refs/heads/main/pages_app/images/NonPromoterSequence.csv"  # Update with the correct path to your dataset
+    return pd.read_csv(url, delimiter=',')
 
 # Streamlit app layout
 def dna_sequencing_visualization():
