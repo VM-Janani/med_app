@@ -3,11 +3,12 @@ from pages_app.homepage import main as home_main
 from pages_app.learning import main as learning_main
 from pages_app.cal import main as calculation_main
 from pages_app.autocorrection import main as auto_main
-
+from pages_app.dna import main as dna_main
+#from pages_app.dna import dna_sequencing_visualization as dna_main
 
 # Create a sidebar for navigation
 st.sidebar.title("Navigation")
-options = st.sidebar.radio("Go to", ("Home", "Learning", "Calculation", "Autocorrection"))
+options = st.sidebar.radio("Go to", ("Home", "Learning", "Calculation", "Autocorrection","DNA sequencing"))
 
 # Display the selected page
 if options == "Home":
@@ -18,4 +19,6 @@ elif options == "Calculation":
     calculation_main()  # Call the main function of calculation.py
 elif options == "Autocorrection":
     auto_main()  # Call the main function of autocorrection.py
+elif options == "DNA sequencing":
+    dna_main() # Call the main function of dna.py
 
